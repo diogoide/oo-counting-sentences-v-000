@@ -18,5 +18,6 @@ class String
     sentences = []
     sentences << self.split(/[!.,]/)
     sentences.filter(function(v){return v!==''}).count
+    end 
   end
 end
