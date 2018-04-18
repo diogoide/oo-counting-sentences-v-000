@@ -22,7 +22,7 @@ class String
     #  new_sentences = sentences.flatten.reject {|c| c.empty?}
       #new_sentences.count
       sentences.count
-      binding.pry
+
       end
 
 end
