@@ -18,6 +18,7 @@ class String
     sentences = []
     sentences << self.split(/[!.,]/)
     new_sentences = sentences.reject {|c| c.empty?}
+    binding.pry
     new_sentences.count
     end
 
