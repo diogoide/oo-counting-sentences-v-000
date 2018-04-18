@@ -17,8 +17,9 @@ class String
   def count_sentences
     sentences = []
     sentences << self.split(/[!.,]/)
-    sentences = sentences.filter(Boolean)
+    new_sentences = sentences.reject {|c| c.empty?}
+    new_sentences
     #sentences.filter(function(v){return v!==''}).count
     end
-  
+
 end
