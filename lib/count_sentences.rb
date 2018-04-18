@@ -19,7 +19,6 @@ class String
     sentences << self.split(/[!.,]/)
     new_sentences = sentences.reject {|c| c.empty?}
     new_sentences.count
-    #sentences.filter(function(v){return v!==''}).count
     end
 
 end
