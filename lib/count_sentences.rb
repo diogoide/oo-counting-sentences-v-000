@@ -20,5 +20,5 @@ class String
     sentences = sentences.filter(Boolean)
     #sentences.filter(function(v){return v!==''}).count
     end
-  end
+  
 end
