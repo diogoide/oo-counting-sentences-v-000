@@ -18,10 +18,10 @@ class String
     #sentences = []
 
       #sentences <<
-      self.split(/[!.,]/)
+      sentences = self.split(/[!.,]/).reject {|c| c.empty?}
     #  new_sentences = sentences.flatten.reject {|c| c.empty?}
-      new_sentences = sentences.reject {|c| c.empty?}
-      new_sentences.count
+      #new_sentences.count
+      sentences.count
       binding.pry
       end
 
